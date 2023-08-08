@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
+*{
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: 'Monomaniac One', sans-serif
+}
+
+button{
+  cursor: pointer;
+}
+
+.mainDiv{
+  width: 100%; height: 100vh;
+  background-color: #130f40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerDiv{
+  /* background-color: aquamarine; */
+  width: 20%; height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure .img{
+  width: 4rem; height: 4rem;
+  color: #fff;
+  transform: translateX(1.5rem);
+}
+
+.centerDiv figcaption{
+  color: #fff;
+}
+
+.addItems{
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.addItems input{
+  width: 100%; height: 1.5rem;
+  background: #fff;
+  color: #3d3d3d;
+  border: 0.2rem solid #fff;
+  outline: none;
+  border-radius: 0.4rem;
+  padding: 1rem 0.5rem;
+}
+
+.addBtn{
+  color: #3d3d3d;
+  float: right;
+  transform: translate(-0.5rem,-2rem);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.addBtn:hover{
+  color: lightgreen;
+}
+
+.showItems{
+  width: 100%;
+}
+
+.eachItem{
+  width: 100%; height: 2rem;
+  color: #fff;
+  background-color: #9980FA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.4rem;
+  padding: 0 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.btns .remBtn{
+  margin-left: 0.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.remBtn:hover{
+  color: red;
+}
+
+.btns .editBtn{
+  margin-left: 0.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.editBtn:hover{
+  color: lightgreen;
+}
+
+.deleteAll{
+  width: 5rem; height: 2rem;
+  margin-top: 2rem;
+  padding: 0 0.5rem;
+  background-color: #fff;
+  color: #3d3d3d;
+  transition: all 0.2s;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+}
+
+.deleteAll:hover{
+  background-color: #9980FA;
+  color: #fff;
+}
+
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+
+  .centerDiv{
+    width: 15rem; height: 65%;
+  }
+  
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .centerDiv{
+    width: 50%; height: 65%;
+  }
+}
