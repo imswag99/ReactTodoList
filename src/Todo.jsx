@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import ListAltIcon from '@mui/icons-material/ListAlt';
+// import ListAltIcon from '@mui/icons-material/ListAlt';
+import logo from './assets/images/to-do-list.png';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import EditIcon from '@mui/icons-material/Edit';
@@ -59,8 +60,8 @@ const Todo = () => {
 
   //local storage
   useEffect(() => {
-    localStorage.setItem("list", JSON.stringify(item))
-  }, [item])
+    localStorage.setItem('list', JSON.stringify(item))
+  }, [item]);
 
 
 
@@ -69,7 +70,7 @@ const Todo = () => {
     <div className='mainDiv'>
       <div className="centerDiv">
         <figure>
-          <ListAltIcon className='img' />
+          <img src={logo} alt='logo' className='img' />
           <figcaption>Add Items To List</figcaption>
         </figure>
 
