@@ -6,11 +6,20 @@ import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import EditIcon from '@mui/icons-material/Edit';
 import "./Todo.css"
 
+
+const updateLocalStorage = () => {
+  let localData = localStorage.getItem('list');
+  if(localData === []){
+    return [];
+  }else{
+    return JSON.parse(localData);
+  }
+} 
+
 const Todo = () => {
 
-
   const [inputData, setInputData] = useState("");
-  const [item, setItem] = useState([]);
+  const [item, setItem] = useState(updateLocalStorage());
   const [toggle, setToggle] = useState(true);
   const [isEdited, setIsEdited] = useState(null);
 
